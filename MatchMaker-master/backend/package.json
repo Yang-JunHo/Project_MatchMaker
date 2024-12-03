@@ -4,13 +4,17 @@
   "description": "anything",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://yang-junho.github.io/Project_MatchMaker/",
   "dependencies": {
     "chokidar": "^3.6.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
+    "gh-pages": "^6.2.0",
     "install": "^0.13.0",
     "md5": "^2.3.0",
     "multer": "^1.4.5-lts.1",
